@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+    maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Pagina Artistica para la venta de articulos de esta misma categoria" />
+    <meta name="author" content="Dabrian Labraña" />
+    <meta name="keyword" content="Grupo Cero,Cero,venta,comprar,arte,artistas,artisticos" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Grupo Cero</title>
+
+    <!--Estilos-->
+    <link rel="Stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/cb0043138a.js" crossorigin="anonymous"></script>
+    <link rel="Stylesheet" href="css/NuevaGaleria.css">
+
+</head>
+
+<body>
+  <!--Menu con buscador bootstrap-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="Imagenes/Pantalla Principal/logo.png" height="55vw" width="55vw">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="GaleriaNew.html">Galeria</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Inicia Sesion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="IniciarSesion.html">Inicia Sesion</a>
+              <a class="dropdown-item" href="Registrarse.html">Registrate</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Ayuda</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contactos.html" tabindex="-1" aria-disabled="true">Contactanos</a>
+          </li>
+        </ul>
+        <!--Boton de Modo noche--> 
+        <button class="switch" id="switch" onsubmit="return false;">
+          <span><i class="fas fa-sun"></i></span>
+          <span><i class="fas fa-moon"></i></span>
+        </button>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+
+  <!--Aqui comienza la nueva galeria-->
+
+
+  <div class="overlay">
+    <div class="slideshow">
+      <span class="btn_cerrar">&times;</span>
+      <div class="botones adelante">
+        <i class="mdi mdi-arrow-right-circle-outline"></i>
+      </div>
+      <div class="botones atras">
+        <i class="mdi mdi-arrow-left-circle-outline"></i>
+      </div>  
+    <img src="" alt="" id="img_slideshow">
+    </div>
+  </div>
+
+  <section class="galeria">
+    <div class="columna">
+      <img src="Imagenes/galeria/k- rose - 35000.jpeg" alt="" data-img-mostrar="0">
+      <img src="Imagenes/galeria/G-.jpeg" alt="" data-img-mostrar="1">
+      <img src="Imagenes/galeria/j-dragon.jpeg" alt="" data-img-mostrar="2">
+      <img src="Imagenes/galeria/k-bknh coneja.jpeg" alt="" data-img-mostrar="3">
+      <img src="Imagenes/galeria/G-BirdBoy.jpeg" alt="" data-img-mostrar="4">
+      <img src="Imagenes/galeria/k-pelo verde.jpeg" alt="" data-img-mostrar="5">
+    </div>
+    <div class="columna">
+      <img src="Imagenes/galeria/j-mascara.jpeg" alt="" data-img-mostrar="6">
+      <img src="Imagenes/galeria/k-catts.jpeg" alt="" data-img-mostrar="7">
+      <img src="Imagenes/galeria/k-ditto feliz- 30000.jpg" alt="" data-img-mostrar="8">
+      <img src="Imagenes/galeria/G-el sol y la vida.jpeg" alt="" data-img-mostrar="9">
+      <img src="Imagenes/galeria/j-plantas.jpeg" alt="" data-img-mostrar="10">
+      <img src="Imagenes/galeria/k-platino.jpeg" alt="" data-img-mostrar="11">
+    </div>
+    <div class="columna">
+      <img src="Imagenes/galeria/G-gene.jpeg" alt="" data-img-mostrar="12">
+      <img src="Imagenes/galeria/j-sombrero.jpeg" alt="" data-img-mostrar="13">
+      <img src="Imagenes/galeria/k-el perro.jpeg" alt="" data-img-mostrar="14">
+      <img src="Imagenes/galeria/k-flores marchitas.jpeg" alt="" data-img-mostrar="15">
+      <img src="Imagenes/galeria/k-forever.jpeg" alt="" data-img-mostrar="16">
+      <img src="Imagenes/galeria/k-pulso rojo.jpeg" alt="" data-img-mostrar="17">
+    </div>
+    <div class="columna">
+      <img src="Imagenes/galeria/G-Mario.jpeg" alt="" data-img-mostrar="18">
+      <img src="Imagenes/galeria/J-tortuga.jpg" alt="" data-img-mostrar="19">
+      <img src="Imagenes/galeria/k-kirishima.jpeg" alt="" data-img-mostrar="20">
+      <img src="Imagenes/galeria/k-lirio-30000.jpeg" alt="" data-img-mostrar="21">
+      <img src="Imagenes/galeria/k-mi prohibicion.jpeg" alt="" data-img-mostrar="22">
+      <img src="Imagenes/galeria/k-tauro.jpeg" alt="" data-img-mostrar="23">
+    </div>
+    <div class="columna">
+      <img src="Imagenes/galeria/G-Mike.jpeg" alt="" data-img-mostrar="24">
+      <img src="Imagenes/galeria/G-Obeja.jpeg" alt="" data-img-mostrar="25">
+      <img src="Imagenes/galeria/k-pulso rojo.jpeg" alt="" data-img-mostrar="26">
+      <img src="Imagenes/galeria/k-ocaso verde - 45000.jpeg" alt="" data-img-mostrar="27">
+      <img src="Imagenes/galeria/k-pain.jpeg" alt="" data-img-mostrar="28">
+      <img src="Imagenes/galeria/K-Sisi.jpeg" alt="" data-img-mostrar="29">
+    </div>
+  </section> 
+
+
+
+
+
+
+<!--galeria antigua 2-->
+<!---
+  <div class="container">
+
+  <div class="col-xs-6 col-sm-3 hover-fade" id="Rose">
+  <a class="img" href="#" title="">
+    <img src="Imagenes/galeria/k- rose - 35000.jpeg" height="300px" width="300px">
+
+  </a>
+  <h4 class="text-center">Rose</h4>
+</div>
+</div>-->
+
+
+
+
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+      </div>
+         <!--JS-->
+    <script src="js/NuevaGaleria.js"></script> 
+</body>
+
+</html>

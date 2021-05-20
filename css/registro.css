@@ -1,0 +1,151 @@
+*{margin:0Px;padding:0Px}
+header, section, footer, aside, nav, article, figure
+{display: block;}
+
+/*Fondo de la pagina*/
+body {background-color: #eaf5f2;
+    font-family:Arial, Helvetica, sans-serif ;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .7s ease all;}
+
+    body.dark{
+		background: rgb(36, 35, 35);
+        transition: .7s ease all;
+	}
+
+/*Estructura de la pagina*/
+header {background-color: #eaf5f2;}
+nav {background-color: #198064;}
+section{background-color: #ffffff3a;}
+footer{background-color: rgba(58, 25, 241, 0);}
+
+#CuadroDestacado {
+    border-left: 1px solid #000;
+    display: flex;
+    margin: 15px;
+    text-align: left;
+    color: rgb(43, 40, 40);
+}
+
+body.dark .datos{
+    color: #fff;
+}
+
+.datos{
+    text-align: center;
+    margin-left: 5px;
+    display: block;
+}
+
+body.dark #Letras{
+    color: #fff;
+}
+
+h1 { font: bold 50px "anton", sans-serif; text-align: left;}
+h2 { font: bold 50px "anton", sans-serif; text-align: left;}
+
+#nombre{
+    text-align: right;
+    border-left: #eaf5f2 solid #000;
+    margin: 15px;
+    color: rgb(43,40,40);
+}
+
+
+.pie_principal {clear: both; text-align: left; border: 5px #2c2b2b5b;
+    padding: 0px; background: #53805a; color: rgb(0, 0, 0);
+    }
+.facebook, .instagram{
+    float: right;
+}
+
+
+    /*Registro*/
+
+.row {
+    background: #8fbd96;
+    padding: 30px;
+    margin: 50px;
+    top: 0px;
+    position: relative;
+    transition: .7s ease all;
+}
+
+.video {
+    width: 100%;
+    position: flex;
+}
+
+body.dark .row{
+    background: #313d35;
+    transition: .7s ease all;
+}
+
+body.dark .form-group{
+    color: #fff;
+}
+
+    /*Modo Oscuro*/
+
+    .switch {
+        background: orange;
+        border-radius: 1000px;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        outline: none;
+        transition: .7s ease all;
+    }
+    
+    .switch::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #eaf5f2;
+        top: 0;
+        left: unset;
+        right: 0;
+        border-radius: 100px;
+        transition: .7s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+    }
+    
+    .switch.active{
+        background: #343d6b;
+        color: black;
+    }
+    
+    .switch.active::after{
+        left: 0;
+        right: unset;
+    }
+    
+    .switch span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+    }
+
+body.dark .pie_principal{
+	background: #232925;
+    transition: .7s ease all;
+}
+
+.videor{
+    width: 58%;
+    height: 500px;
+    align-self: left;
+    align-items: left;
+    text-align: center;
+    padding: 0;
+    top: 0;
+    right: 0;
+}
