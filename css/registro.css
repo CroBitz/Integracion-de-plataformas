@@ -55,7 +55,7 @@ h2 { font: bold 50px "anton", sans-serif; text-align: left;}
 
 
 .pie_principal {clear: both; text-align: left; border: 5px #2c2b2b5b;
-    padding: 0px; background: #53805a; color: rgb(0, 0, 0);
+    padding: 0px; background: #ffffff; color: rgb(0, 0, 0);
     }
 .facebook, .instagram{
     float: right;
@@ -65,7 +65,7 @@ h2 { font: bold 50px "anton", sans-serif; text-align: left;}
     /*Registro*/
 
 .row {
-    background: #8fbd96;
+    background: #e1e4e1;
     padding: 30px;
     margin: 50px;
     top: 0px;
